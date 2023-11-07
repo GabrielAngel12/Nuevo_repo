@@ -1,8 +1,5 @@
 ---
-import '../pages/styles/global.css';
-import Navigation from '../components/Navigation.astro';
-import Footer from '../components/Footer.astro';
-
+import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "Sobre mi";
 const identity = {
     firstName: "Gabriel",
@@ -20,11 +17,7 @@ const skillColor = "navy";
 const fontWeight = "bold";
 const textCase = "uppercase";
 ---
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{pageTitle}</title>
+<BaseLayout>
     <style define:vars = {{skillColor}}>
         h1 {
             color: purple;
@@ -37,9 +30,7 @@ const textCase = "uppercase";
         }
     
     </style>
-</head>
-<body>
-    <Navigation/>
+
     <h1>Mi sitio Astro</h1>
     <h1>{pageTitle}</h1>
     <h2>... ¡y mi nuevo sitio Astro!</h2>
@@ -62,6 +53,4 @@ const textCase = "uppercase";
         {happy && <p>¡Estoy feliz de aprender Astro!</p>}
         {finished && <p>¡He terminado este tutorial!</p>}
         {goal === 3 ? <p>Mi objetivo es terminar en 3 días.</p> : <p>Mi objetivo no son 3 días.</p>}
-    <Footer/>
-</body>
-</html>
+</BaseLayout>
