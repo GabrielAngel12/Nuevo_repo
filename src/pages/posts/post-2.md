@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: Mi segunda publicación en el blog
 charset: utf-8
 author: Alumno de Astro

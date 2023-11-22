@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Mi primera publicacion en el blog'
 charset: utf-8
 pubDate: 2022-07-01
@@ -10,7 +11,6 @@ image:
 tags: ["astro", "bloguear", "aprender en público"]
 ---
 # Mi primera publicacion en el blog
-Published on: 2022-07-01
 
 ¡Bienvenido a mi _nuevo blog_ sobre el aprendizaje de Astro! Aquí, voy a compartir mi viaje de aprendizaje a medida que construyo un nuevo sitio web.
 
